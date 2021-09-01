@@ -9,55 +9,30 @@
     <trackTrending>false</trackTrending>
     <type>MultiselectPicklist</type>
     <valueSet>
-        
-            <restricted>true</restricted>
-        
-            <valueSetDefinition>
-            
-                <sorted>false</sorted>
-            
-                <value>
-                
-                    <fullName>Manual Entry</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Manual Entry</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>Purchase List</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Purchase List</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>Student Information System</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Student Information System</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>Webform</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Webform</label>
-                
-                </value>
-            
-            </valueSetDefinition>
-        
-        </valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Manual Entry</fullName>
+                <default>false</default>
+                <label>Manual Entry</label>
+            </value>
+            <value>
+                <fullName>Purchase List</fullName>
+                <default>false</default>
+                <label>Purchase List</label>
+            </value>
+            <value>
+                <fullName>Student Information System</fullName>
+                <default>false</default>
+                <label>Student Information System</label>
+            </value>
+            <value>
+                <fullName>Webform</fullName>
+                <default>false</default>
+                <label>Webform</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
     <visibleLines>8</visibleLines>
 </CustomField>
