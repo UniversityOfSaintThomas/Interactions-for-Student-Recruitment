@@ -1,0 +1,27 @@
+minimum_cumulusci_version: '3.42.0'
+project:
+    name: Interactions-for-Student-Recruitment
+    package:
+        name: Interactions-for-Student-Recruitment
+        api_version: '52.0'
+    dependencies:
+        - github: 'https://github.com/SalesforceFoundation/EDA'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Interactions-for-Student-Recruitment/tests
+            options:
+                outputdir: robot/Interactions-for-Student-Recruitment/results
+
+    robot_testdoc:
+        options:
+            path: robot/Interactions-for-Student-Recruitment/tests
+            output: robot/Interactions-for-Student-Recruitment/doc/Interactions-for-Student-Recruitment_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
