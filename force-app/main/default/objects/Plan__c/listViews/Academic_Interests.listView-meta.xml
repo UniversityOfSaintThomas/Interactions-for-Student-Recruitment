@@ -9,13 +9,9 @@
     <columns>Recruitment_Interest__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
-        
-            <field>Type__c</field>
-        
-            <operation>equals</operation>
-        
-            <value>Academic</value>
-        
-        </filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Academic</value>
+    </filters>
     <label>Academic Interests</label>
 </ListView>

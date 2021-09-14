@@ -9,6 +9,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <rules>
         <fullName>Affiliation%3A Update Upsert Key</fullName>
@@ -18,8 +19,7 @@
         </actions>
         <active>true</active>
         <description>Sets the Affiliation Upsert Key field to the Contact ID +  &quot;.&quot; + Account ID for matching records through Interactions.</description>
-        <formula>Upsert_Key__c &lt;&gt;
-CASESAFEID(hed__Contact__r.Id)+&quot;.&quot;+CASESAFEID(hed__Account__r.Id)</formula>
+        <formula>Upsert_Key__c &lt;&gt; CASESAFEID(hed__Contact__r.Id)+&quot;.&quot;+CASESAFEID(hed__Account__r.Id)</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

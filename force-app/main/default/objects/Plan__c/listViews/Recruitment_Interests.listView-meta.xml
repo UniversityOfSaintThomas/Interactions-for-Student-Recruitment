@@ -6,13 +6,9 @@
     <columns>Department__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
-        
-            <field>Type__c</field>
-        
-            <operation>equals</operation>
-        
-            <value>Recruitment</value>
-        
-        </filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Recruitment</value>
+    </filters>
     <label>Recruitment Interests</label>
 </ListView>

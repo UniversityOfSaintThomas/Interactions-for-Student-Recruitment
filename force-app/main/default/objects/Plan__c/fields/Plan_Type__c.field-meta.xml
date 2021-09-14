@@ -9,44 +9,24 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        
-            <restricted>true</restricted>
-        
-            <valueSetDefinition>
-            
-                <sorted>false</sorted>
-            
-                <value>
-                
-                    <fullName>Major</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Major</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>Minor</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Minor</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>Certificate</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Certificate</label>
-                
-                </value>
-            
-            </valueSetDefinition>
-        
-        </valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Major</fullName>
+                <default>false</default>
+                <label>Major</label>
+            </value>
+            <value>
+                <fullName>Minor</fullName>
+                <default>false</default>
+                <label>Minor</label>
+            </value>
+            <value>
+                <fullName>Certificate</fullName>
+                <default>false</default>
+                <label>Certificate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
 </CustomField>

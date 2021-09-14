@@ -8,32 +8,18 @@
     <trackFeedHistory>false</trackFeedHistory>
     <type>Picklist</type>
     <valueSet>
-        
-            <valueSetDefinition>
-            
-                <sorted>false</sorted>
-            
-                <value>
-                
-                    <fullName>Hispanic or Latino</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Hispanic or Latino</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>Not Hispanic or Latino</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Not Hispanic or Latino</label>
-                
-                </value>
-            
-            </valueSetDefinition>
-        
-        </valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hispanic or Latino</fullName>
+                <default>false</default>
+                <label>Hispanic or Latino</label>
+            </value>
+            <value>
+                <fullName>Not Hispanic or Latino</fullName>
+                <default>false</default>
+                <label>Not Hispanic or Latino</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
 </CustomField>

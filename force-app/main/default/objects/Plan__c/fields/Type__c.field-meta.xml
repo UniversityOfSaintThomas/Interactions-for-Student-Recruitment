@@ -9,34 +9,19 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        
-            <restricted>true</restricted>
-        
-            <valueSetDefinition>
-            
-                <sorted>false</sorted>
-            
-                <value>
-                
-                    <fullName>Recruitment</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Recruitment</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>Academic</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Academic</label>
-                
-                </value>
-            
-            </valueSetDefinition>
-        
-        </valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Recruitment</fullName>
+                <default>false</default>
+                <label>Recruitment</label>
+            </value>
+            <value>
+                <fullName>Academic</fullName>
+                <default>false</default>
+                <label>Academic</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
 </CustomField>

@@ -10,13 +10,9 @@
     <columns>Skip_Mapping__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
-        
-            <field>Source_Field_API_Name__c</field>
-        
-            <operation>contains</operation>
-        
-            <value>School</value>
-        
-        </filters>
+        <field>Source_Field_API_Name__c</field>
+        <operation>contains</operation>
+        <value>School</value>
+    </filters>
     <label>School</label>
 </ListView>

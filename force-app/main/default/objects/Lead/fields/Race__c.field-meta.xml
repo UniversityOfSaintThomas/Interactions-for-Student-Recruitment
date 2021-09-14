@@ -8,63 +8,34 @@
     <trackFeedHistory>false</trackFeedHistory>
     <type>MultiselectPicklist</type>
     <valueSet>
-        
-            <valueSetDefinition>
-            
-                <sorted>false</sorted>
-            
-                <value>
-                
-                    <fullName>American Indian or Alaska Native</fullName>
-                
-                    <default>false</default>
-                
-                    <label>American Indian or Alaska Native</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>Black or African American</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Black or African American</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>Native Hawaiian or Other Pacific Islander</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Native Hawaiian or Other Pacific Islander</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>White</fullName>
-                
-                    <default>false</default>
-                
-                    <label>White</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>Asian</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Asian</label>
-                
-                </value>
-            
-            </valueSetDefinition>
-        
-        </valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>American Indian or Alaska Native</fullName>
+                <default>false</default>
+                <label>American Indian or Alaska Native</label>
+            </value>
+            <value>
+                <fullName>Black or African American</fullName>
+                <default>false</default>
+                <label>Black or African American</label>
+            </value>
+            <value>
+                <fullName>Native Hawaiian or Other Pacific Islander</fullName>
+                <default>false</default>
+                <label>Native Hawaiian or Other Pacific Islander</label>
+            </value>
+            <value>
+                <fullName>White</fullName>
+                <default>false</default>
+                <label>White</label>
+            </value>
+            <value>
+                <fullName>Asian</fullName>
+                <default>false</default>
+                <label>Asian</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
     <visibleLines>4</visibleLines>
 </CustomField>

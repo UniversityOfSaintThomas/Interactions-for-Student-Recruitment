@@ -9,32 +9,18 @@
     <trackFeedHistory>false</trackFeedHistory>
     <type>Picklist</type>
     <valueSet>
-        
-            <valueSetDefinition>
-            
-                <sorted>false</sorted>
-            
-                <value>
-                
-                    <fullName>Advisor</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Advisor</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>Student</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Student</label>
-                
-                </value>
-            
-            </valueSetDefinition>
-        
-        </valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advisor</fullName>
+                <default>false</default>
+                <label>Advisor</label>
+            </value>
+            <value>
+                <fullName>Student</fullName>
+                <default>false</default>
+                <label>Student</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
 </CustomField>

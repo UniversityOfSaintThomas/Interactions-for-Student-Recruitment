@@ -9,64 +9,34 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        
-            <restricted>true</restricted>
-        
-            <valueSetDefinition>
-            
-                <sorted>false</sorted>
-            
-                <value>
-                
-                    <fullName>BA</fullName>
-                
-                    <default>false</default>
-                
-                    <label>BA</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>BS</fullName>
-                
-                    <default>false</default>
-                
-                    <label>BS</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>MA</fullName>
-                
-                    <default>false</default>
-                
-                    <label>MA</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>MS</fullName>
-                
-                    <default>false</default>
-                
-                    <label>MS</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>MBA</fullName>
-                
-                    <default>false</default>
-                
-                    <label>MBA</label>
-                
-                </value>
-            
-            </valueSetDefinition>
-        
-        </valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BA</fullName>
+                <default>false</default>
+                <label>BA</label>
+            </value>
+            <value>
+                <fullName>BS</fullName>
+                <default>false</default>
+                <label>BS</label>
+            </value>
+            <value>
+                <fullName>MA</fullName>
+                <default>false</default>
+                <label>MA</label>
+            </value>
+            <value>
+                <fullName>MS</fullName>
+                <default>false</default>
+                <label>MS</label>
+            </value>
+            <value>
+                <fullName>MBA</fullName>
+                <default>false</default>
+                <label>MBA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
 </CustomField>

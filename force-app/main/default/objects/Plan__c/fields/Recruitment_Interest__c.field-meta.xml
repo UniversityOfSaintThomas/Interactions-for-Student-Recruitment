@@ -7,22 +7,14 @@
     <inlineHelpText>Enter the Recruitment Interest related to the Academic Interest.</inlineHelpText>
     <label>Recruitment Interest</label>
     <lookupFilter>
-        
-            <active>true</active>
-        
-            <filterItems>
-            
-                <field>Plan__c.Type__c</field>
-            
-                <operation>equals</operation>
-            
-                <value>Recruitment</value>
-            
-            </filterItems>
-        
-            <isOptional>false</isOptional>
-        
-        </lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Plan__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Recruitment</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
     <referenceTo>Plan__c</referenceTo>
     <relationshipLabel>Recruitment Interests</relationshipLabel>
     <relationshipName>Academic_Interests</relationshipName>

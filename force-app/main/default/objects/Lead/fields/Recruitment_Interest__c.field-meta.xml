@@ -7,22 +7,14 @@
     <inlineHelpText>The marketable name for an official Academic Interest (or group of Interests) that the individual is inquiring about.</inlineHelpText>
     <label>Recruitment Interest</label>
     <lookupFilter>
-        
-            <active>true</active>
-        
-            <filterItems>
-            
-                <field>Plan__c.Type__c</field>
-            
-                <operation>equals</operation>
-            
-                <value>Recruitment</value>
-            
-            </filterItems>
-        
-            <isOptional>false</isOptional>
-        
-        </lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Plan__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Recruitment</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
     <referenceTo>Plan__c</referenceTo>
     <relationshipLabel>Leads with Recruitment Interest</relationshipLabel>
     <relationshipName>Recruitment_Interest_Leads</relationshipName>

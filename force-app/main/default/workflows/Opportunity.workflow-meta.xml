@@ -9,6 +9,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Opportunity_First_Recruitment_Interest</fullName>
@@ -19,6 +20,7 @@
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Opportunity_Key_Set_Based_on_Career</fullName>
@@ -42,6 +44,7 @@ IF(ISBLANK(Academic_Interest__r.Id), Recruitment_Interest__r.Id, IF(ISBLANK(Acad
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Opportunity_Name_Set_to_Last_Term</fullName>
@@ -52,6 +55,7 @@ IF(ISBLANK(Academic_Interest__r.Id), Recruitment_Interest__r.Id, IF(ISBLANK(Acad
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Opportunity_Set_First_Inquiry_Source</fullName>
@@ -62,6 +66,7 @@ IF(ISBLANK(Academic_Interest__r.Id), Recruitment_Interest__r.Id, IF(ISBLANK(Acad
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <fieldUpdates>
         <fullName>Opportunity_Set_Inquiry_Date</fullName>
@@ -72,6 +77,7 @@ IF(ISBLANK(Academic_Interest__r.Id), Recruitment_Interest__r.Id, IF(ISBLANK(Acad
         <notifyAssignee>false</notifyAssignee>
         <operation>Formula</operation>
         <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
     </fieldUpdates>
     <rules>
         <fullName>Opportunity%3A Set Application Submitted Date</fullName>
@@ -128,18 +134,7 @@ IF(ISBLANK(Academic_Interest__r.Id), Recruitment_Interest__r.Id, IF(ISBLANK(Acad
         </actions>
         <active>true</active>
         <description>Sets the Opportunity Key based on the Career, Recruitment Interest or Academic Interest, and Term, according to the formula used in the Opportunity Key field on the Interactions object.</description>
-        <formula>/*The below formula allows for a centralized and decentralized recruitment model.*/
-
-/*If the Academic Career from the Academic Interest = Undergraduate or the Academic Interest is blank and the Recruitment Interest Career = Undergraduate, this formula uses the centralized model (one Opportunity per Term). If the same is true for the Graduate Career, this formula uses the decentralized model (one Opportunity per Opportunity Plan and Term). Otherwise, the formula is blank, which means the Opportunity is missing important information.*/ Opportunity_Key__c &lt;&gt; CASESAFEID(Contact__r.Id)+ IF(Academic_Interest__c + Recruitment_Interest__c = &quot;&quot;,&quot;&quot;, 
-
-/*If the Academic Interest Career = Undergraduate, or Academic Interest is blank and the Recruitment Interest Career = Undergraduate, this formula uses the centralized model (one Opportunity per Term)*/ 
-IF(OR(ISPICKVAL(Academic_Interest__r.Career__c, &quot;Undergraduate&quot;), AND(ISBLANK(Academic_Interest__c), ISPICKVAL(Recruitment_Interest__r.Career__c, &quot;Undergraduate&quot;))), &quot;.Undergraduate.&quot;+Term__r.Id, 
-
-/*Otherwise, this formula uses the decentralized model (one Opportunity per Academic Interest or Recruitment Interest and Term)*/ 
-&quot;.Graduate.&quot; + 
-
-/*If there is no Academic Interest, the decentralized model adds the Recruitment Interest Id. Otherwise, the model uses the Recruitment Interest ID from the Academic Interest, or if there is none, the Academic Interest ID is used as a last resort. Most Academic Interests should have a Recruitment Interest ID to ensure a smooth transition from inquiry to application.*/ 
-IF(ISBLANK(Academic_Interest__r.Id), Recruitment_Interest__r.Id, IF(ISBLANK(Academic_Interest__r.Recruitment_Interest__c), Academic_Interest__r.Id, Academic_Interest__r.Recruitment_Interest__r.Id))+&quot;.&quot;+Term__r.Id))</formula>
+        <formula>/*The below formula allows for a centralized and decentralized recruitment model.*/  /*If the Academic Career from the Academic Interest = Undergraduate or the Academic Interest is blank and the Recruitment Interest Career = Undergraduate, this formula uses the centralized model (one Opportunity per Term). If the same is true for the Graduate Career, this formula uses the decentralized model (one Opportunity per Opportunity Plan and Term). Otherwise, the formula is blank, which means the Opportunity is missing important information.*/ Opportunity_Key__c &lt;&gt; CASESAFEID(Contact__r.Id)+ IF(Academic_Interest__c + Recruitment_Interest__c = &quot;&quot;,&quot;&quot;,   /*If the Academic Interest Career = Undergraduate, or Academic Interest is blank and the Recruitment Interest Career = Undergraduate, this formula uses the centralized model (one Opportunity per Term)*/  IF(OR(ISPICKVAL(Academic_Interest__r.Career__c, &quot;Undergraduate&quot;), AND(ISBLANK(Academic_Interest__c), ISPICKVAL(Recruitment_Interest__r.Career__c, &quot;Undergraduate&quot;))), &quot;.Undergraduate.&quot;+Term__r.Id,   /*Otherwise, this formula uses the decentralized model (one Opportunity per Academic Interest or Recruitment Interest and Term)*/  &quot;.Graduate.&quot; +   /*If there is no Academic Interest, the decentralized model adds the Recruitment Interest Id. Otherwise, the model uses the Recruitment Interest ID from the Academic Interest, or if there is none, the Academic Interest ID is used as a last resort. Most Academic Interests should have a Recruitment Interest ID to ensure a smooth transition from inquiry to application.*/  IF(ISBLANK(Academic_Interest__r.Id), Recruitment_Interest__r.Id, IF(ISBLANK(Academic_Interest__r.Recruitment_Interest__c), Academic_Interest__r.Id, Academic_Interest__r.Recruitment_Interest__r.Id))+&quot;.&quot;+Term__r.Id))</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

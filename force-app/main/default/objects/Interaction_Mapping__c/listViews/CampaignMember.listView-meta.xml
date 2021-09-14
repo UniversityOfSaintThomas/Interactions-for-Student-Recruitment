@@ -10,13 +10,9 @@
     <columns>Skip_Mapping__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
-        
-            <field>Target_Object_API_Name__c</field>
-        
-            <operation>equals</operation>
-        
-            <value>CampaignMember</value>
-        
-        </filters>
+        <field>Target_Object_API_Name__c</field>
+        <operation>equals</operation>
+        <value>CampaignMember</value>
+    </filters>
     <label>Campaign Member</label>
 </ListView>

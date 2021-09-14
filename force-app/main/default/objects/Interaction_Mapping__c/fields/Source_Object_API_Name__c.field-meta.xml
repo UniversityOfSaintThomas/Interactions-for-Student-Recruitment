@@ -9,34 +9,19 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        
-            <restricted>true</restricted>
-        
-            <valueSetDefinition>
-            
-                <sorted>false</sorted>
-            
-                <value>
-                
-                    <fullName>Lead</fullName>
-                
-                    <default>false</default>
-                
-                    <label>Lead</label>
-                
-                </value>
-            
-                <value>
-                
-                    <fullName>Interaction__c</fullName>
-                
-                    <default>true</default>
-                
-                    <label>Interaction__c</label>
-                
-                </value>
-            
-            </valueSetDefinition>
-        
-        </valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lead</fullName>
+                <default>false</default>
+                <label>Lead</label>
+            </value>
+            <value>
+                <fullName>Interaction__c</fullName>
+                <default>true</default>
+                <label>Interaction__c</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
 </CustomField>
