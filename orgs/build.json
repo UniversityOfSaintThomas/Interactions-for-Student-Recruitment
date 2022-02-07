@@ -1,5 +1,5 @@
 {
-  "orgName": "Interactions-for-Student-Recruitment - Beta Test Org",
+  "orgName": "Interactions-for-Student-Recruitment - Dev Org",
   "edition": "Developer",
   "settings": {
     "lightningExperienceSettings": {
@@ -16,6 +16,14 @@
       "sessionSettings": {
         "forceRelogin": false
       }
+    },
+    "languageSettings": {
+      "enableTranslationWorkbench": true
+    }
+  },
+  "objectSettings": {
+    "account": {
+      "defaultRecordType": "Administrative"
     }
   }
 }

@@ -10,6 +10,15 @@ private class INT_InteractionMappingService_TEST {
         // Create and insert Interaction Mapping Test Data
         List<Interaction_Mapping__c> testMappings = INT_TestDataFactory.createTestMappings();
         insert testMappings;
+
+        List<hed.TDTM_Global_API.TdtmToken> tokens = hed.TDTM_Global_API.getTdtmConfig();
+        for (hed.TDTM_Global_API.TdtmToken TDTMToken : tokens) {
+            // disable all EDA-provided trigger handlers
+            if (TDTMToken.ownedByNamespace == 'hed') {
+                TDTMToken.active = false;
+            }
+        }
+        hed.TDTM_Global_API.setTdtmConfig(tokens);
     }
 
     @IsTest
