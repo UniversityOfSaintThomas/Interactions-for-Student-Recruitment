@@ -6,6 +6,15 @@
 @IsTest
 private class INT_OpportunityContactRoleHandler_TEST {
     @TestSetup static void setUp() {
+
+        List<hed.TDTM_Global_API.TdtmToken> tokens = hed.TDTM_Global_API.getTdtmConfig();
+        for (hed.TDTM_Global_API.TdtmToken TDTMToken : tokens) {
+            // disable all EDA-provided trigger handlers
+            if (TDTMToken.ownedByNamespace == 'hed') {
+                TDTMToken.active = false;
+            }
+        }
+
         hed__Trigger_Handler__c oppHandler = new hed__Trigger_Handler__c(
                 Name = 'Update Opportunity Contact Role',
                 hed__Object__c = 'Opportunity',
@@ -16,13 +25,6 @@ private class INT_OpportunityContactRoleHandler_TEST {
         );
         insert oppHandler;
 
-        List<hed.TDTM_Global_API.TdtmToken> tokens = hed.TDTM_Global_API.getTdtmConfig();
-        for (hed.TDTM_Global_API.TdtmToken TDTMToken : tokens) {
-            // disable all EDA-provided trigger handlers
-            if (TDTMToken.ownedByNamespace == 'hed') {
-                TDTMToken.active = false;
-            }
-        }
     }
 
     @IsTest

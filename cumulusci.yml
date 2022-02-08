@@ -6,8 +6,6 @@ project:
         api_version: '52.0'
     dependencies:
         - github: 'https://github.com/SalesforceFoundation/EDA'
-    git:
-        default_branch: 'main'
     source_format: sfdx
 
 tasks:

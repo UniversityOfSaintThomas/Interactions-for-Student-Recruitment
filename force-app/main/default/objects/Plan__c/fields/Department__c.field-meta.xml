@@ -9,7 +9,7 @@
     <lookupFilter>
         <active>true</active>
         <filterItems>
-            <field>Account.RecordTypeId</field>
+            <field>Account.RecordType.Name</field>
             <operation>equals</operation>
             <value>University Department</value>
         </filterItems>

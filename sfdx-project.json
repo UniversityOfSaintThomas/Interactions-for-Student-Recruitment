@@ -1,1 +1,16 @@
-{"packageDirectories": [{"path": "force-app", "default": true}], "namespace": null, "sourceApiVersion": "52.0"}
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "interactions",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "namespace": null,
+    "sourceApiVersion": "52.0",
+    "packageAliases": {
+        "interactions": "0Ho4P000000fxZvSAI"
+    }
+}
